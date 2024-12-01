@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/interior-3840x2160-blue-26007.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login-form, .signup-form{
+    background-color: rgba(0, 0, 0, 0.445);
+}   
+.sign-up, .sign-in{
+    cursor: pointer;
+}
+.h-80{
+    height: 80px;
+}

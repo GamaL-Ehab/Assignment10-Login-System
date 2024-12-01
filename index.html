@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login System</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container vh-100 d-flex align-items-center justify-content-center">
+    <!-- LOGIN FORM -->
+    <div
+      class="login-form d-flex flex-column align-items-center justify-content-evenly col-12 col-lg-8 h-75 m-auto rounded-5 bg-opacity-75 d-block">
+      <h1 class="text-white text-uppercase fw-bold">Smart Login System</h1>
+      <div class="form-floating w-75 h-80">
+        <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" />
+        <p class="text-danger p-2 mb-0 pb-0 d-none fw-bold">
+          <i class="fa-solid fa-circle-exclamation"></i> Incorrect Email
+        </p>
+        <label for="loginEmail">Email address:</label>
+      </div>
+      <div class="form-floating w-75 h-80">
+        <input type="password" class="form-control" id="loginPass" placeholder="Password" />
+        <p class="text-danger p-2 mb-0 pb-0 d-none fw-bold">
+          <i class="fa-solid fa-circle-exclamation"></i> Incorrect Password
+        </p>
+        <label for="loginPass">Password:</label>
+      </div>
+      <button class="btn btn-outline-light p-3 px-5 fw-bold" id="login-btn">
+        Login
+      </button>
+      <h2 class="text-white-50 fs-5">
+        Dont Have An Account?
+        <span class="sign-up text-white text-decoration-underline">Sign-UP</span>
+      </h2>
+    </div>
+    <!-- SIGNUP FORM -->
+    <div
+      class="signup-form d-flex flex-column align-items-center justify-content-around col-12 col-lg-8 h-75 m-auto rounded-5 bg-opacity-75 d-none">
+      <h1 class="text-white text-uppercase fw-bold">Smart Login System</h1>
+      <div class="form-floating w-75 h-80">
+        <input type="text" class="form-control" id="username" placeholder="username" />
+        <p class="text-danger p-2 mb-0 pb-0 fw-bold d-none">
+          <i class="fa-solid fa-circle-exclamation"></i> Invalid UserName
+          (Must start with letter and contain 3 - 50 characters)
+        </p>
+        <label for="username">UserName:</label>
+      </div>
+      <div class="form-floating w-75 h-80">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+        <p class="email-error text-danger p-2 mb-0 pb-0 fw-bold d-none">
+          <i class="fa-solid fa-circle-exclamation"></i> Invalid Email (ex:
+          abc@gmail.com)
+        </p>
+        <label for="email">Email address:</label>
+      </div>
+      <div class="form-floating w-75 h-80">
+        <input type="password" class="form-control" id="pass" placeholder="Password" />
+        <p class="text-danger p-2 mb-0 pb-0 fw-bold d-none">
+          <i class="fa-solid fa-circle-exclamation"></i> Invalid password
+          (Must contain atleast 8 characters and 1 number)
+        </p>
+        <label for="pass">Password:</label>
+      </div>
+      <p class="fw-bold text-success fs-5 d-none">SignedUp Successfully</p>
+      <button class="btn btn-outline-light p-3 px-5 fw-bold" id="signup-btn">
+        Sign Up
+      </button>
+      <h2 class="text-white-50 fs-5">
+        You Have An Account?
+        <span class="sign-in text-white text-decoration-underline">Sign-IN</span>
+      </h2>
+    </div>
+
+    <!-- Home Page -->
+    <div class="home fs-4 d-none">
+      <nav class="fixed-top d-flex justify-content-between px-5 py-3 bg-body">
+        <div class="logo fw-bold">Smart login</div>
+        <button class="btn btn-outline-danger" id="signout-btn">
+          Log Out
+        </button>
+      </nav>
+      <h2 class="bg-black bg-opacity-25 rounded-3 p-5 fs-1 text-center text-white fw-bold text-uppercase">
+        Welcome
+        <span id="userNameSpan" class="d-block p-2 mt-2 text-capitalize">UserName</span>
+      </h2>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
